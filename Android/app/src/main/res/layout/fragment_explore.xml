@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorExplore"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedExplore"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/llContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Khối Search + Filter bo góc dưới -->
+            <LinearLayout
+                android:id="@+id/searchFilterContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="20dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/bg_top_container_rounded">
+
+                <!-- Search -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilSearch"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:boxBackgroundMode="filled"
+                    app:boxStrokeColor="@color/appMainColor"
+                    android:backgroundTint="@color/white"
+                    app:hintTextColor="@color/gray"
+                    app:boxCornerRadiusTopStart="16dp"
+                    app:boxCornerRadiusTopEnd="16dp"
+                    app:boxCornerRadiusBottomStart="16dp"
+                    app:boxCornerRadiusBottomEnd="16dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/til_search_tour_name"
+                        android:textSize="13sp"
+                        android:textColor="@color/gray"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:backgroundTint="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Nút mở dialog bộ lọc -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnOpenFilter"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/btn_filter"
+                    android:textColor="@color/gray"
+                    android:backgroundTint="@color/white"
+                    app:cornerRadius="12dp"
+                    app:icon="@drawable/ic_filter_list"
+                    app:iconGravity="textStart"
+                    android:elevation="8dp"
+                    android:translationZ="2dp"
+                    app:iconPadding="8dp" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinSort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_marginStart="9dp"
+                android:layout_marginEnd="9dp"
+                android:dropDownVerticalOffset="48dp"
+                tools:ignore="TouchTargetSizeCheck"/>
+
+            <!-- ChipGroup hiện các filter được chọn -->
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupFilters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingHorizontal="16dp"
+                app:singleLine="false"
+                app:chipSpacing="8dp" />
+
+            <!-- RecyclerView danh sách Tour -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvExploreTours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="15dp"
+                android:nestedScrollingEnabled="false" />
+
+            <!-- Empty state -->
+            <LinearLayout
+                android:id="@+id/emptyState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="24dp"
+                android:visibility="gone">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/explore"
+                    android:contentDescription="empty" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_zero_search"
+                    android:textColor="@color/little_text_color"
+                    android:textSize="16sp"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="provinces">
+        <item>Tuyên Quang</item>
+        <item>Cao Bằng</item>
+        <item>Lai Châu</item>
+        <item>Lào Cai</item>
+        <item>Thái Nguyên</item>
+        <item>Điện Biên</item>
+        <item>Lạng Sơn</item>
+        <item>Sơn La</item>
+        <item>Phú Thọ</item>
+        <item>Bắc Ninh</item>
+        <item>Quảng Ninh</item>
+        <item>Hà Nội</item>
+        <item>Hải Phòng</item>
+        <item>Hưng Yên</item>
+        <item>Ninh Bình</item>
+        <item>Thanh Hóa</item>
+        <item>Nghệ An</item>
+        <item>Hà Tĩnh</item>
+        <item>Quảng Trị</item>
+        <item>Huế</item>
+        <item>Đà Nẵng</item>
+        <item>Quảng Ngãi</item>
+        <item>Gia Lai</item>
+        <item>Đắk Lắk</item>
+        <item>Khánh Hòa</item>
+        <item>Lâm Đồng</item>
+        <item>Đồng Nai</item>
+        <item>Tây Ninh</item>
+        <item>TP. Hồ Chí Minh</item>
+        <item>Đồng Tháp</item>
+        <item>An Giang</item>
+        <item>Vĩnh Long</item>
+        <item>Cần Thơ</item>
+        <item>Cà Mau</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>Tất cả</item>
+        <item>Biển</item>
+        <item>Văn hóa</item>
+        <item>Mạo hiểm</item>
+        <item>Thiên nhiên</item>
+        <item>Nghỉ dưỡng</item>
+    </string-array>
+
+    <string-array name="sort_options">
+        <item>Mặc định</item>
+        <item>Giá tăng dần</item>
+        <item>Giá giảm dần</item>
+    </string-array>
+</resources>

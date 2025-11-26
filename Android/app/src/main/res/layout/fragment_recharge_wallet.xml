@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorWallet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Tiêu đề -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvWalletHeader"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Ví khách hàng"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="16dp"
+            android:background="@color/appMainColor" />
+
+        <!-- Nội dung chính -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="24dp"
+            android:paddingHorizontal="24dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Điều khoản dịch vụ"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/big_text_color"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Điều khoản sử dụng -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ví khách hàng của ứng dụng chỉ hỗ trợ các giao dịch thanh toán nội bộ. Người dùng cần nạp tiền vào ví trước khi thực hiện đặt dịch vụ hoặc thanh toán. Số dư trong ví không thể quy đổi ngược thành tiền mặt, chỉ dùng trong phạm vi các tính năng của ứng dụng."
+                android:justificationMode="inter_word"
+                android:textSize="13sp"
+                android:textColor="@color/gray"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="30dp"/>
+
+            <!-- Số dư -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số dư: 0 VNĐ"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/appMainColor"
+                android:layout_marginBottom="30dp" />
+
+            <!-- Input: Số tiền nạp -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Số tiền nạp"
+                app:hintTextColor="@color/gray"
+                app:endIconMode="none"
+                app:boxStrokeColor="@color/appMainColor"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxBackgroundMode="outline"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray"
+                    android:padding="12dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Nút nạp tiền -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRecharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nạp tiền"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/appMainColor"
+                app:cornerRadius="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,27 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Android app-specific ignore
+app/google-services.json
+app/src/main/res/values/config.xml
+
+# Keystore
+*.jks
+*.keystore
+
+# NDK / C++ build
+obj/
+*.o
+*.so
+
+# Output artifacts
+*.apk
+*.aab
+*.aar

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_admin_home"
+        android:icon="@drawable/ic_home_fox"
+        android:title="Trang chủ" />
+
+    <item
+        android:id="@+id/nav_create_admin"
+        android:icon="@drawable/ic_create_admin"
+        android:title="Quản trị viên" />
+
+    <item
+        android:id="@+id/nav_users_manager"
+        android:icon="@drawable/ic_users_manager"
+        android:title="Người dùng" />
+
+    <item
+        android:id="@+id/nav_tours_manager"
+        android:icon="@drawable/ic_tour"
+        android:title="Tour" />
+
+    <item
+        android:id="@+id/nav_orders_manager"
+        android:icon="@drawable/ic_orders_manager"
+        android:title="Đơn hàng" />
+</menu>
