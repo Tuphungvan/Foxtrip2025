@@ -130,18 +130,10 @@ npm start
 
 ## 📱 Screenshots
 
-> *Vui lòng thêm screenshots giao diện ứng dụng tại đây*
-
-<!-- 
-Gợi ý các màn hình cần chụp:
-- Màn hình đăng nhập/đăng ký
-- Trang chủ với danh sách tour
-- Chi tiết tour
-- Giỏ hàng và thanh toán
-- Video short
-- Chatbot AI
-- Trang quản trị Admin
--->
+![Ảnh dự án](screenshots/1.png)
+![Ảnh dự án](screenshots/2.png)
+![Ảnh dự án](screenshots/3.png)
+![Ảnh dự án](screenshots/4.png)
 
 ## 📊 Database Schema
 
@@ -160,5 +152,3 @@ Hệ thống sử dụng MongoDB với các collection chính:
 - Xác thực bằng JWT Token
 - Xác thực OTP qua email khi đặt hàng
 - Phân quyền User/Admin/Super Admin
-
-
