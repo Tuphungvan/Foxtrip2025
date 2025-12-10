@@ -1,9 +1,5 @@
 # 🦊 FoxTrip - Ứng dụng Du lịch Di động
 
-<p align="center">
-  <img src="Android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt="FoxTrip Logo" width="120"/>
-</p>
-
 Ứng dụng di động cung cấp và quản lý các dịch vụ du lịch, cho phép người dùng tìm kiếm, đặt tour và quản lý chuyến đi một cách tiện lợi.
 
 ## 📋 Giới thiệu
